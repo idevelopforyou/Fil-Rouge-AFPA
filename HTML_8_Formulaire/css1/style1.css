@@ -1,0 +1,48 @@
+/* Couleur du texte du titre */
+h2 {
+  color: #4caf50;
+}
+
+/* Couleur de fond du formulaire */
+form {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Couleur de fond des champs de saisie */
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* Couleur du texte des labels */
+label {
+  color: #444;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Style du carré de coche */
+input[type="checkbox"] {
+  transform: scale(1.5);
+  margin-right: 10px;
+}
+
+/* Couleur des boutons Envoyer et Annuler */
+input[type="submit"],
+input[type="reset"] {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}

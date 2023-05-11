@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMULAIRE</title>
+    <link rel="stylesheet" href="css1/style1.css" />
+  </head>
+  <body> 
+    <fieldset>
+      <h2>* Ces zones sont obligatoires</h2>
+      
+      <form action="correction.html" method="get">
+        <fieldset class="fieldset-coordonnees">
+          <legend>Vos coordonnées</legend>
+          <br>
+          <div class="form-group">
+            <label for="nom">* Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="prenom">* Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="sexe">* Sexe :</label>
+            <div class="form-group-radio">
+              <input type="radio" id="homme" name="sexe" value="homme" required>
+              <label for="homme">Homme</label>
+              <input type="radio" id="femme" name="sexe" value="femme" required>
+              <label for="femme">Femme</label>
+            </div>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="date_naissance">* Date de naissance :</label>
+            <input type="date" id="date_naissance" name="date_naissance" required>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" name="adresse">
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="ville">Ville :</label>
+            <input type="text" id="ville" name="ville">
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="code_postal">* Code postal :</label>
+            <input type="text" id="code_postal" name="code_postal" required>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="monMail@afpa.fr">
+          </div>
+          <br>
+    </fieldset>
+        <br>
+    <fieldset class="fieldset-demande">
+			    <legend>Votre demande</legend>
+			    <label for="sujet">* Sujet :</label>
+			    <select id="sujet" name="sujet" required>
+				    <option value="" disabled selected>Veuillez sélectionner un sujet</option>
+				    <option value="mes-commandes">Mes commandes</option>
+				    <option value="question-produit">Question sur un produit</option>
+				    <option value="reclamation">Réclamation</option>
+				    <option value="autre">Autre</option>
+			    </select>
+          <br>
+          <br>
+          <br>
+			    <label for="question">* Votre question :</label>
+			    <textarea id="question" name="question" rows="5" cols="80" placeholder="Écrire votre question ici" required></textarea>
+          <br>
+          <br>
+			    <input type="checkbox" id="traitement_informatique" name="traitement_informatique" required>
+      
+			    <label for="traitement_informatique"> * J'accepte le traitement informatique de ce formulaire</label>
+		</fieldset>
+        <br>
+        <div class="form-buttons">
+          <input type="submit" value="Envoyer">
+          <input type="reset" value="Annuler">
+        </div>
+      </form>
+    </body>
+</html>
